@@ -29,6 +29,7 @@ public Ticket()
         Console.WriteLine("Enter ticket Submitter: ");
         Submitter = Console.ReadLine();
 
+        bool loopList = true;
         while (loopList == true)
         {
             Console.WriteLine("Enter watcher name or ~ to stop: ");
