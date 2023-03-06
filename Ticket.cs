@@ -9,4 +9,26 @@ class Ticket
     public string Submitter { get; set; }
     public List<string> Watching = new List<String>();
 
+public Ticket()
+    {
+        Console.WriteLine("Enter a unique TicketID: ");
+        TicketID = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter ticket summary: ");
+        Summary = Console.ReadLine();
+
+        Console.WriteLine("Enter ticket status (Open, Closed): ");
+        Status = Console.ReadLine();
+
+        Console.WriteLine("Enter ticket priority (High, Medium, Low): ");
+        Priority = Console.ReadLine();
+
+        Console.WriteLine("Enter ticket Assignee: ");
+        Assigned = Console.ReadLine();
+
+        Console.WriteLine("Enter ticket Submitter: ");
+        Submitter = Console.ReadLine();
+
+    }
+
 }
