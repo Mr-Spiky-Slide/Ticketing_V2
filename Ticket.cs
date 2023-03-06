@@ -29,6 +29,20 @@ public Ticket()
         Console.WriteLine("Enter ticket Submitter: ");
         Submitter = Console.ReadLine();
 
+        while (loopList == true)
+        {
+            Console.WriteLine("Enter watcher name or ~ to stop: ");
+            string inputWatch = Console.ReadLine();
+            if (inputWatch == "~")
+            {
+                loopList = false;
+            }
+            else
+            {
+                Watching.Add(inputWatch);
+            }
+        }
+
     }
 
 }
