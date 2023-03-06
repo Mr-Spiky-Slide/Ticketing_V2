@@ -6,3 +6,4 @@
  // create instance of Logger
  var logger = LogManager.LoadConfiguration(path).GetCurrentClassLogger();
  logger.Info("Program started");
+ 
